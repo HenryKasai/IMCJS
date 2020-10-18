@@ -1,4 +1,4 @@
-const button = document.querySelector("button");
+const button = document.getElementById("enviar");
 const buttonclick = (e) => {
     e.preventDefault();
     let kg = document.getElementById("massa").value;
@@ -12,25 +12,25 @@ const buttonclick = (e) => {
             }
             if (imc < 17) {
                 resultado();
-                div.insertAdjacentHTML("afterbegin", "<p>Diagnóstico: Muito abaixo do peso.</p>");
+                div.insertAdjacentHTML("beforeend", "<p>Diagnóstico: Muito abaixo do peso.</p>");
             } if (imc >= 17 && imc <= 18.49) {
                 resultado();
-                div.insertAdjacentHTML("afterbegin", "<p>Diagnóstico: Abaixo do peso.</p>");
+                div.insertAdjacentHTML("beforeend", "<p>Diagnóstico: Abaixo do peso.</p>");
             } if (imc >= 18.5 && imc <= 24.99) {
                 resultado();
-                div.insertAdjacentHTML("afterbegin", "<p>Diagnóstico: Peso normal.</p>");
+                div.insertAdjacentHTML("beforeend", "<p>Diagnóstico: Peso normal.</p>");
             } if (imc >= 25 && imc <= 29.99) {
                 resultado();
-                div.insertAdjacentHTML("afterbegin", "<p>Diagnóstico: Acima do peso.</p>");
+                div.insertAdjacentHTML("beforeend", "<p>Diagnóstico: Acima do peso.</p>");
             } if (imc >=  30 && imc <= 34.99) {
                 resultado();
-                div.insertAdjacentHTML("afterbegin", "<p>Diagnóstico: Obesidade I.</p>");
+                div.insertAdjacentHTML("beforeend", "<p>Diagnóstico: Obesidade I.</p>");
             } if (imc >= 35 && imc <= 40) {
                 resultado();
-                div.insertAdjacentHTML("afterbegin", "<p>Diagnóstico: Obesidade II (severa).</p>");
+                div.insertAdjacentHTML("beforeend", "<p>Diagnóstico: Obesidade II (severa).</p>");
             } if (imc > 40) {   
                 resultado();
-                div.insertAdjacentHTML("afterbegin", "<p>Diagnóstico: Obesidade III (mórbida).</p>");
+                div.insertAdjacentHTML("beforeend", "<p>Diagnóstico: Obesidade III (mórbida).</p>");
             }
         }
     }
