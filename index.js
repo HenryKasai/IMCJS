@@ -32,7 +32,11 @@ const buttonclick = (e) => {
                 resultado();
                 div.insertAdjacentHTML("beforeend", "<p>Diagnóstico: Obesidade III (mórbida).</p>");
             }
+        } else {
+            alert("Valor inválido.");
         }
+    } else {
+        alert("Valor inválido.");
     }
 }
 button.addEventListener("click", buttonclick);
